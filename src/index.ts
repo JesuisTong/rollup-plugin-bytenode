@@ -22,7 +22,7 @@ export default function bytenode(options: RollupBytenodeOptions = {}): Plugin {
         includes = DEFAULT_INCLUDES,
     } = options;
     return {
-        name: "@tongz/rollup-plugin-bytenode",
+        name: "@tongzag/rollup-plugin-bytenode",
         async writeBundle(outputOptions, bundles) {
             const { dir = process.cwd() } = outputOptions;
             for (const key of Object.keys(bundles)) {

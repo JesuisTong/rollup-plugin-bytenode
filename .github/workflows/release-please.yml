@@ -16,4 +16,4 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
-          package-name: '@tongz/rollup-plugin-bytenode'
+          package-name: '@tongzag/rollup-plugin-bytenode'

@@ -1,17 +1,17 @@
-# @tongz/rollup-plugin-bytenode
+# @tongzag/rollup-plugin-bytenode
 A Simple Rollup plugin compile your code use [bytenode](https://github.com/bytenode/bytenode)
 
 ## Install
 
 ```sh
 # npm
-npm install --save-dev @tongz/rollup-plugin-bytenode
+npm install --save-dev @tongzag/rollup-plugin-bytenode
 
 # yarn
-yarn add -D @tongz/rollup-plugin-bytenode
+yarn add -D @tongzag/rollup-plugin-bytenode
 
 # pnpm
-pnpm add -D @tongz/rollup-plugin-bytenode
+pnpm add -D @tongzag/rollup-plugin-bytenode
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ pnpm add -D @tongz/rollup-plugin-bytenode
 Create a `rollup.config.js` [configuration file](https://www.rollupjs.org/guide/en/#configuration-files) and import the plugin:
 
 ```js
-import bytenode from '@tongz/rollup-plugin-bytenode';
+import bytenode from '@tongzag/rollup-plugin-bytenode';
 
 export default {
   input: 'src/index.js',

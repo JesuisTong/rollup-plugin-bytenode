@@ -1,5 +1,5 @@
 {
-    "name": "@tongz/rollup-plugin-bytenode",
+    "name": "@tongzag/rollup-plugin-bytenode",
     "version": "0.0.1",
     "description": "rollup your code use bytenode",
     "main": "./dist/cjs/index.js",
