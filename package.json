@@ -1,0 +1,58 @@
+{
+    "name": "@tongz/rollup-plugin-bytenode",
+    "version": "0.0.1",
+    "description": "rollup your code use bytenode",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "exports": {
+        "types": "./types/index.d.ts",
+        "import": "./dist/esm/index.js",
+        "default": "./dist/cjs/index.js"
+    },
+    "files": [
+        "dist",
+        "!dist/**/*.map",
+        "types",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JesuisTong/rollup-plugin-bytenode.git"
+    },
+    "keywords": [
+        "rollup",
+        "bytenode",
+        "plugin"
+    ],
+    "author": "TongZ <iamtongton@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/JesuisTong/rollup-plugin-bytenode/issues"
+    },
+    "homepage": "https://github.com/JesuisTong/rollup-plugin-bytenode#readme",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^11.1.0",
+        "@types/babel__core": "^7.20.0",
+        "@types/node": "^18.16.3",
+        "rollup": "^3.21.4",
+        "tslib": "^2.5.0",
+        "typescript": "^5.0.4"
+    },
+    "peerDependencies": {
+        "rollup": "^3.0.0"
+    },
+    "dependencies": {
+        "@babel/core": "^7.21.8",
+        "@babel/plugin-transform-arrow-functions": "^7.21.5",
+        "@babel/preset-env": "^7.21.5",
+        "bytenode": "^1.4.1"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}

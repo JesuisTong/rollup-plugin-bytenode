@@ -1,0 +1,9 @@
+{
+    "private": "true",
+    "type": "module",
+    "scripts": {
+        "build": "rollup -c ./rollup.config.mjs",
+        "test:cjs": "node test/index.cjs",
+        "test:es": "node test/index.mjs"
+    }
+}
