@@ -1,36 +1,19 @@
 on:
-    push:
-        branches:
-            - main
-name: release-please
-permissions:
-    contents: write
-    pull-requests: write
-jobs:
-    release-please:
-        permissions:
-            contents: write # to create release commit (google-github-actions/release-please-action)
-            pull-requests: write # to create release PR (google-github-actions/release-please-action)
+  push:
+    branches:
+      - main
 
-        runs-on: ubuntu-latest
-        steps:
-            - uses: google-github-actions/release-please-action@v3
-              with:
-                  release-type: node
-                  command: manifest
-                  token: ${{ secrets.GITHUB_TOKEN }}
-            # - uses: actions/checkout@v2
-            # - uses: actions/setup-node@v1
-            #   with:
-            #       node-version: 16
-            #       registry-url: "https://registry.npmjs.org"
-            # - run: npm install pnpm@latest -g
-            # - run: pnpm i
-            # - run: pnpm run build
-            # - run: ls dist
-            # - run: echo '--------'
-            # - run: echo ${{ secrets.NPM_TOKEN }}
-            # - run: echo ${{ secrets.GITHUB_TOKEN }}
-        #   - run: npm publish
-        #     env:
-        #       NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: release-please-action
