@@ -3,8 +3,6 @@ A Simple Rollup plugin compile your code use [bytenode](https://github.com/byten
 
 ## Install
 
-Using pnpm:
-
 ```sh
 # npm
 npm install --save-dev @tongz/rollup-plugin-bytenode
