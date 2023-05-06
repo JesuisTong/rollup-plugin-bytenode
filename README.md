@@ -59,7 +59,7 @@ Default: `/[^\.]+(\.jsc)\..+/`
 
 Plugin will match all files then transform to `bytenode file`
 
-## caution
+## Caution
 1. Because of [bytenode issue](https://github.com/bytenode/bytenode/issues/157), i use `@babel/plugin-transform-arrow-functions` to compile `arrow function`
 2. Compile `bytenode file` to `commonjs` even if you determine `output.format = 'esm'`
 
